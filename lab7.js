@@ -30,16 +30,16 @@ var total = 0;
 // console.log("Total: $" + total.toFixed(2));
 
 shoppingList.forEach(function(element){
-	var newElement = document.createElement('p');
+	var newElement = document.createElement('li');
 	newElement.innerHTML = element.name +"... $" + element.price;
-	document.body.appendChild(newElement);
+	document.getElementById('list').appendChild(newElement);
 	total += element.price;
 });
 
 var subtotal = total;
 newPrice = document.createElement('p');
 newPrice.innerHTML = "TOTAL is $" + total;
-document.body.appendChild(newPrice);
+document.getElementById('total').appendChild(newPrice);
 
 // Here's my function
 // function myFunction() {

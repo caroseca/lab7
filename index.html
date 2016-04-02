@@ -3,20 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>	
-	<link rel="stylesheet" href="styles.css"
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-<p>Name: <input type="text" id="name" value=""></p>
-<p>Item: <input type="text" id="item"></p>
-
-<button onclick="myFunction()">Add</button>
-
-
-
-
-
-<script type"text/javascript" src="lab6java.js"></script>
-
+	<h1>Shopping List</h1>
+	<div id="left">
+			<h2>Add a new item</h2>
+			<p>Name: <input type="text" id="name" value=""></p>
+			<p>Item: <input type="text" id="item"></p>
+			<button onclick="myFunction()">Add</button>
+	</div>
+	<div id="right">
+		<h2>Shopping List</h2>
+		<ul id="list"></ul>
+		<p id="total"></ul>
+		</div>
+<script type"text/javascript" src="lab7.js"></script>
 </body>
 </html>
